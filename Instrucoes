@@ -1,0 +1,38 @@
+Sei: 
+Quantidade que quer abastecer
+Consumo medio do automovel
+Distancias e precos por listro de cada posto
+Depois de abastecer o condutor vai ate ao ponto incial
+
+Objetivo: Determinar posto com menor custo por litro efetivo em centimos
+
+Custo efetivo: Contabiliza o preco da ida e volta
+
+Tenho 50 litros
+Gasto 10 litros por cada 100km 
+1 litro por cada 10 km
+
+
+final tenho 49 litros dos 50 que abasteci
+
+se o preco por litro for 1.30 euros entao pagava 65 euros pelos 50 litros
+
+preco por litro efetivo e de 132 centimos
+
+Programa deve ler dois inteiros
+
+L = quantidade a abastecer em litros    feito
+C = Consumo do automovel a cada 100km e litros  feito
+
+depois le se N
+
+N = quantidade de postos entre 1 e 2000     feito
+
+Depois devem ser lidos N pares
+
+d = distancia em metros
+p = preco por litro de combustivel em centimos para cada um dos postos
+
+Output = numero de ordem do posto de abastecimento a usar e a que distancia esta ou seja o com menor custo efetivo
+
+Em caso de empate deve ser mostrado oque apareceu primeiro
