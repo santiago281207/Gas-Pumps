@@ -6,7 +6,7 @@
 
 
 int EntreAB(int n,int min,int max);
-int CustoEfetivo_por_Litro(int preco_por_litro,int qtd_abastecer,int dist_ate_bomba);
+int CustoEfetivo_por_Litro(int preco_por_litro,int qtd_abastecer,int dist_ate_bomba/*,int litros_por_100km*/);
 
 int main()
 {
@@ -38,7 +38,7 @@ int main()
         printf("Distancia e preco do posto %d (D P): ",i+1);
         scanf("%d %d",&dist_postos[i],&preco_por_litro[i]);
         
-        preco_efetivo[i] = CustoEfetivo_por_Litro(preco_por_litro[i],qtd_a_abastecer,dist_postos[i]);
+        preco_efetivo[i] = CustoEfetivo_por_Litro(preco_por_litro[i],qtd_a_abastecer,dist_postos[i]/*,gasto_por_100km*/);
 
         if(i == 0)
         {
@@ -60,11 +60,11 @@ int EntreAB(int n,int min,int max)
     return n >= min && n <= max;
 }
 
-int CustoEfetivo_por_Litro(int preco_por_litro,int qtd_abastecer,int dist_ate_bomba)
+int CustoEfetivo_por_Litro(int preco_por_litro,int qtd_abastecer,int dist_ate_bomba/*,int litros_por_100km*/)
 {
     int custo_total = qtd_abastecer * preco_por_litro;
     int km_a_percorrer = DIST_DO_GASTO_EM_METROS / dist_ate_bomba;
-    int litros_gastos_ate_bomba = DIST_GASTO_EM_KM / km_a_percorrer;
+    int litros_gastos_ate_bomba = DIST_GASTO_EM_KM ;
     int real_abastecido = qtd_abastecer - litros_gastos_ate_bomba;
     int valor_efetivo = custo_total / real_abastecido;
 

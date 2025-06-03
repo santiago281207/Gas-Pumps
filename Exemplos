@@ -14,24 +14,22 @@ Posto a usar: 4 (que esta' a 5700 m)
 
 
 Exemplo 2
-Indique a quantidade a abastecer: 45
-Indique o consumo medio: 5
-Indique a quantidade de postos: 3
-
-Distancia e preco do posto 1: 7500 137
-Distancia e preco do posto 2: 9400 135
-Distancia e preco do posto 3: 900 138
+45
+5
+3
+7500 137
+9400 135
+900 138
 
 Posto a usar: 2 (que esta' a 9400 m)
 
 
 Exemplo 3
-Indique a quantidade a abastecer: 40
-Indique o consumo medio: 5
-Indique a quantidade de postos: 3
-
-Distancia e preco do posto 1: 7500 137
-Distancia e preco do posto 2: 9400 135
-Distancia e preco do posto 3: 900 138
+40
+5
+3
+7500 137
+9400 135
+900 138
 
 Posto a usar: 3 (que esta' a 900 m)
