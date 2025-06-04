@@ -64,7 +64,7 @@ int CustoEfetivo_por_Litro(int preco_por_litro,int qtd_abastecer,int dist_ate_bo
 {
     int custo_total = qtd_abastecer * preco_por_litro;
     int km_a_percorrer = DIST_DO_GASTO_EM_METROS / dist_ate_bomba;
-    int litros_gastos_ate_bomba = DIST_GASTO_EM_KM ;
+    int litros_gastos_ate_bomba = DIST_GASTO_EM_KM / km_a_percorrer ;
     int real_abastecido = qtd_abastecer - litros_gastos_ate_bomba;
     int valor_efetivo = custo_total / real_abastecido;
 
